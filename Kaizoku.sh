@@ -22,7 +22,7 @@ if [ -z "$SUDO_USER" ]; then
 fi
 
 sleep 10 #Wait for 10 seconds before the screen goes blank, Use ctrl + c if you change your mind
-rtcwake -m mem -t $(date +%s -d "tomorrow 02:09") #Set an alarm to wake up the system at midnight 
+rtcwake -m mem -t $(date +%s -d "tomorrow 00:15") #Set an alarm to wake up the system at midnight 
 xset dpms force off #Turn off the screen to conserve battery and avoid disturbing your sleep
 amixer set Master mute #Similarily mute the volume
 sudo -u "$SUDO_USER" mkdir -p "$SERIES_DIR" "$MOVIES_DIR" 
